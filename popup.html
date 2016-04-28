@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        background-color:#37474F;
+      }
+      #status {
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+      .logo {
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+      .logo:hover {
+        opacity:0.5;
+        cursor: pointer;
+      }
+      .logo:click {
+        border-width: 2px;
+        border-color: #fff;
+      }
+      
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="status"></div>
+    <img src="amazon.png" height="30" width="30" class="logo" id="amazon">
+    <img src="youtube.png" height="30" width="30" class="logo" id="youtube">
+    <img src="monoprice.png" height="30" width="30" class="logo" id="monoprice">
+    <img src="stack.png" height="30" width="30" class="logo" id="stack">
+    <img src="github.png" height="30" width="30" class="logo" id="github">
+  </body>
+</html>
+
