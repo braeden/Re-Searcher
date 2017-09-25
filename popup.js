@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
     } else {
-      setTimeout(function () { window.close();}, 500);
+      setTimeout(function () { window.close();}, 5000);
     }
   });
 });
